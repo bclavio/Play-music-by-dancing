@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1304040696551516}
+  m_IsPrefabParent: 1
+--- !u!1 &1304040696551516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4428376968322788}
+  - component: {fileID: 114174793476659764}
+  - component: {fileID: 114275696300824240}
+  - component: {fileID: 114396514355544414}
+  - component: {fileID: 114847699564519040}
+  - component: {fileID: 114961260712115572}
+  m_Layer: 0
+  m_Name: MusicPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4428376968322788
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304040696551516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114174793476659764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304040696551516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e658f9376ad7f6142ba3b8947832db1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  melodicObject: {fileID: 0}
+  rythmObject: {fileID: 0}
+  drumClip: {fileID: 8300000, guid: 6276166ca919bce4390aee4441e92f70, type: 3}
+  applause: {fileID: 8300000, guid: 9ffa05968400c074caac1260dab597b4, type: 3}
+  rythmUseTwoSets: 1
+  melodicUseTwoSets: 0
+  startMusic: 0
+  mainTrackTime: 0
+  melodicBeatInterval: 2
+  rythmBeatInterval: 2
+  beatInterval: 2
+  timeOffset: 0
+  earlyApplauseTime: 4
+  melodyPlayable: 0
+  rythmPlayable: 0
+  inputReady: 0
+  playApplause: 0
+--- !u!114 &114275696300824240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304040696551516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5189b8d637584a244b4f86dada0c8a3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1InputObject: {fileID: 0}
+  player2InputObject: {fileID: 0}
+  player2active: 0
+  player2rythm: 1
+  repeatTrack: 0
+--- !u!114 &114396514355544414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304040696551516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e088119e3fa87334cb3ca43a384ad4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  melodicBeatVerse: 2
+  rythmBeatVerse: 2
+  melodicBeatChorus: 4
+  rythmBeatChorus: 4
+  verseTimeStart: 0
+  verse2TimeStart: 80
+  bridgeTimeStart: 40
+  bridge2TimeStart: 72
+  chorusTimeStart: 56
+--- !u!114 &114847699564519040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304040696551516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e236e28acc2faf14587c74e78a973a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualFeedback: {fileID: 0}
+  visualDisplayTime: 9
+  activateFireworks: 0
+--- !u!114 &114961260712115572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304040696551516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2a3dce5035bd843b6c020130fd94d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introTextObject: {fileID: 0}
+  countDownObjects: []
+  introTime: 7.3333
+  introIsPlaying: 0
